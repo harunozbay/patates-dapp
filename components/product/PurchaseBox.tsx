@@ -81,10 +81,10 @@ export default function ProductBox(props: IPurchaseBox) {
             alt={props.name}
           />
         </div>
-        <h3 className="text-xl font-semibold mr-1">{props.name}</h3>
-        <p className="text-gray-500">Fiyat: {props.price} ETH</p>
-        <p className="text-gray-500">Stok: {props.stock}</p>
-        <p className="text-gray-500 mb-5">Açıklama: {props.desc}</p>
+        <h3 className="text-xl font-semibold mr-1 text-center">{props.name}</h3>
+        <p className="text-gray-500 text-center">Fiyat: {props.price} ETH</p>
+        <p className="text-gray-500 text-center">Stok: {props.stock}</p>
+        <p className="text-gray-500 text-center mb-5">Açıklama: {props.desc}</p>
         <div className='flex flex-row justify-center '>
             <input type="number" placeholder='Adet' value={Number(quantity)} onChange={onInputChange} className='border border-black rounded mr-2 box-border px-2 w-1/4' />
             <Button variant='solid'  disabled={ parseInt(props.stock) < quantity || quantity===0 } onClick={purchaseProduct}>Satın Al</Button>

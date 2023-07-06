@@ -30,7 +30,7 @@ export default function ProductBox(props: IProductBox) {
           />
         </div>
         <div className="flex flex-row justify-center items-center  w-full">
-          <h3 className="text-xl font-semibold ml-2">{props.name}</h3>
+          <h3 className="text-xl font-semibold ml-2 text-center">{props.name}</h3>
           <div className='flex'>
             <div className='ml-1 flex justify-center items-center'>
               <EditProductModal
@@ -58,9 +58,9 @@ export default function ProductBox(props: IProductBox) {
           </div>
         </div>
 
-        <p className="text-gray-500">Fiyat: {props.price} ETH</p>
-        <p className="text-gray-500">Stok: {props.stock}</p>
-        <p className="text-gray-500">Açıklama: {props.desc}</p>
+        <p className="text-gray-500 text-center">Fiyat: {props.price} ETH</p>
+        <p className="text-gray-500 text-center">Stok: {props.stock}</p>
+        <p className="text-gray-500 text-center">Açıklama: {props.desc}</p>
       </div>
     );
 }
